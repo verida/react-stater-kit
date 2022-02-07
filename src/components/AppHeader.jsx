@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { ReactComponent as VeridaLogo } from '../assets/images/verida_logo.svg';
+import VeridaLogo from '../assets/images/verida_logo.svg';
 import VeridaClient from '../api/veridaClient';
 import '../assets/css/header.css';
 import { useNavigate } from 'react-router-dom';
@@ -37,9 +37,12 @@ const AppHeader = () => {
 
 	return (
 		<header className='user-menu'>
-			<div>
-				<VeridaLogo />
-			</div>
+			<img
+				className='user-meu-logo'
+				height={'30'}
+				src={VeridaLogo}
+				alt={'verida-logo'}
+			/>
 			<div className='user-menu-widget'>
 				<div className='m-dropdown'>
 					<span>{profile.name}</span>
