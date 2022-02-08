@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+@font-face {
+    font-family: 'Sora';
+    src: local('Sora'), url(../fonts/Sora-Regular.ttf) format('truetype')
+}
+
+
+body {
+    font-family: 'Sora', sans-serif;
+}

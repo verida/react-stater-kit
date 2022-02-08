@@ -1,0 +1,61 @@
+.connect-svg{
+ height: 4rem;
+}
+
+
+.login-container {
+    text-align: center;
+    width: 744px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    background: #ffffff;
+    padding: 0 1.5rem;
+    margin: auto;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    margin: 8rem auto;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 83%;
+        margin: 8rem auto;
+    }
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect>* {
+    margin: 0.7rem 0;
+}
+
+.connect h3 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.connect p {
+    word-break: inherit;
+}
+
+.connect button {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.connect {
+    padding: 1rem 0;
+    height: 20rem;
+}
+
+.loader {
+    padding: 1rem 0;
+    height: 20rem;
+}
