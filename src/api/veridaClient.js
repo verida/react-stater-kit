@@ -1,13 +1,9 @@
 import { Network, EnvironmentType } from '@verida/client-ts';
 import { VaultAccount, hasSession } from '@verida/account-web-vault';
 import EventEmitter from 'events';
-import {
-    VERIDA_VAULT,
-    CONTEXT_NAME,
-    VERIDA_TESTNET_DEFAULT_SERVER,
-    VERIDA_TESTNET_DEFAULT_NOTIFICATION_SERVER,
-    VERIDA_LOGO_URL
-} from '../constant';
+
+
+const { REACT_APP_LOGO_URL, REACT_APP_CONTEXT_NAME, REACT_APP_VERIDA_VAULT } = process.env;
 
 
 class VeridaClientApi extends EventEmitter {
@@ -29,7 +25,7 @@ class VeridaClientApi extends EventEmitter {
     }
 
     hasSession() {
-        return hasSession(CONTEXT_NAME);
+        return hasSession(REACT_APP_CONTEXT_NAME);
     }
 
     /**
@@ -37,24 +33,7 @@ class VeridaClientApi extends EventEmitter {
      */
     async connect() {
         this.account = new VaultAccount({
-            defaultDatabaseServer: {
-                type: 'VeridaDatabase',
-                endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
-            },
-            defaultMessageServer: {
-                type: 'VeridaMessage',
-                endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
-            },
-            defaultNotificationServer: {
-                type: 'VeridaNotification',
-                endpointUri: VERIDA_TESTNET_DEFAULT_NOTIFICATION_SERVER
-            },
-            vaultConfig: {
-                request: {
-                    logoUrl: VERIDA_LOGO_URL,
-                },
-            },
-
+            logoUrl: REACT_APP_LOGO_URL,
         });
 
         this.context = await Network.connect({
@@ -63,7 +42,7 @@ class VeridaClientApi extends EventEmitter {
             },
             account: this.account,
             context: {
-                name: CONTEXT_NAME
+                name: REACT_APP_CONTEXT_NAME
             }
         });
 
@@ -86,7 +65,7 @@ class VeridaClientApi extends EventEmitter {
     async initProfile() {
         const services = this;
         const client = await services.context.getClient();
-        services.profileInstance = await client.openPublicProfile(services.did, VERIDA_VAULT);
+        services.profileInstance = await client.openPublicProfile(services.did, REACT_APP_VERIDA_VAULT);
         const cb = async () => {
             const data = await services.profileInstance.getMany();
             services.profile = {
@@ -112,7 +91,7 @@ class VeridaClientApi extends EventEmitter {
     }
 
     async logout() {
-        await this.context.getAccount().disconnect(CONTEXT_NAME);
+        await this.context.getAccount().disconnect(REACT_APP_CONTEXT_NAME);
         this.context = null;
         this.account = null;
         this.did = null;
