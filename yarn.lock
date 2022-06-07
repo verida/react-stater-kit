@@ -2456,52 +2456,52 @@
     "@typescript-eslint/types" "4.15.2"
     eslint-visitor-keys "^2.0.0"
 
-"@verida/account-node@^1.1.8":
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/@verida/account-node/-/account-node-1.1.8.tgz#7b85c6406cda5437178e58dac875f31e85b966d9"
-  integrity sha512-xSxCh3JjCZKDxAXxX7xWjhCTnEYnsWdsUnkpczUyRwUrZs1qAeinHwqdbxGbVjFVbRxxhkevbbIuJDwWiUJrrA==
-  dependencies:
-    "@verida/account" "^1.1.8"
-    "@verida/did-client" "^0.1.7"
-    "@verida/did-document" "^1.0.4"
-    "@verida/encryption-utils" "^1.1.2"
-    "@verida/keyring" "^1.1.2"
-
-"@verida/account-web-vault@^1.1.9":
+"@verida/account-node@^1.1.9":
   version "1.1.9"
-  resolved "https://registry.yarnpkg.com/@verida/account-web-vault/-/account-web-vault-1.1.9.tgz#84ece2a1ef3bff0733dd1105a3dee6b47743dde1"
-  integrity sha512-mSm0gOPtneD/5tOmPQoF5Fw4U9nDt9BOrUU8VMGp4ISxIoFRd1F9i3tDQkd5RPXqVqA0fYsAUUlqjNi3T/uzug==
+  resolved "https://registry.yarnpkg.com/@verida/account-node/-/account-node-1.1.9.tgz#52247eccb5341165c0ed0139be75adb71cb75ef3"
+  integrity sha512-8HpymV9rkyYfOagYmCbGm53Ra4sypRMDx2MIe+Muv4MfBtNFCm5mqF8B9wPtuWjUm5fYXc0euk2pPDigseCYbw==
   dependencies:
-    "@verida/account" "^1.1.8"
-    "@verida/encryption-utils" "^1.1.2"
-    "@verida/keyring" "^1.1.2"
+    "@verida/account" "^1.1.9"
+    "@verida/did-client" "^0.1.8"
+    "@verida/did-document" "^1.0.5"
+    "@verida/encryption-utils" "^1.1.3"
+    "@verida/keyring" "^1.1.3"
+
+"@verida/account-web-vault@^1.1.12":
+  version "1.1.12"
+  resolved "https://registry.yarnpkg.com/@verida/account-web-vault/-/account-web-vault-1.1.12.tgz#ddab45d64654fa0c6229c6eadb22352ad46bd271"
+  integrity sha512-0mUoqDnBW1vYYuU/a55FG/kLJsQjU56fSqzRztFqiqNptPSw1Lhzb7ARZHftD3/GnOFZ1okbm1+SfGoBUz4ywA==
+  dependencies:
+    "@verida/account" "^1.1.9"
+    "@verida/encryption-utils" "^1.1.3"
+    "@verida/keyring" "^1.1.3"
     lodash "^4.17.21"
     qrcode-with-logos "^1.0.3"
     store "^2.0.12"
 
-"@verida/account@^1.1.8":
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/@verida/account/-/account-1.1.8.tgz#b8ad182cb1852e4646cfd638dd356d6ab435676f"
-  integrity sha512-plPd5d4uRgmm7AvsBUkVhXW3PT8abacMUjj+mJgyq3GD3JTleOnSvRb/EMFAnPHu7VhwsDoWDQBAxgvRVPccNg==
+"@verida/account@^1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@verida/account/-/account-1.1.9.tgz#7c21fb7711ff9d5f554544e22fdfef1782229dd7"
+  integrity sha512-AfXhd2C4VT0D5uoUGYnLv2rBHv7Uds98P5wx/7cWehoFAVXitBrAmhoEDrO1DN8HZEO+m2vpgMCaswCUQ5xzsA==
   dependencies:
-    "@verida/keyring" "^1.1.2"
-    "@verida/storage-link" "^1.1.7"
+    "@verida/keyring" "^1.1.3"
+    "@verida/storage-link" "^1.1.8"
     did-jwt "5.7.0"
     lodash "^4.17.21"
     tweetnacl-util "^0.15.1"
 
-"@verida/client-ts@^1.1.12":
-  version "1.1.12"
-  resolved "https://registry.yarnpkg.com/@verida/client-ts/-/client-ts-1.1.12.tgz#81e21bf756c6e826e38455696d95a4962c015a0f"
-  integrity sha512-TIXlkgj9xTsYD+4yTSlcONIEK8koxxZJU6hv/SiHcSnL1d80dD/ScRiPMFpwucyuHk6SwmSNrStb50GXeTKirg==
+"@verida/client-ts@^1.1.15":
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/@verida/client-ts/-/client-ts-1.1.15.tgz#5428c3a3df7cf995d75f9179b8441bb2a22b7e7b"
+  integrity sha512-we3VCMrm6F9aWBZpTNpkB3f6fYKk5Wzdj90vWIKwutbKVoyAQRZFBDgymXsbiKDojC/w1faZ7qLuTNcwaFbVLA==
   dependencies:
-    "@verida/account" "^1.1.8"
-    "@verida/account-node" "^1.1.8"
-    "@verida/did-client" "^0.1.7"
-    "@verida/did-document" "^1.0.4"
-    "@verida/encryption-utils" "^1.1.2"
-    "@verida/keyring" "^1.1.2"
-    "@verida/storage-link" "^1.1.7"
+    "@verida/account" "^1.1.9"
+    "@verida/account-node" "^1.1.9"
+    "@verida/did-client" "^0.1.8"
+    "@verida/did-document" "^1.0.5"
+    "@verida/encryption-utils" "^1.1.3"
+    "@verida/keyring" "^1.1.3"
+    "@verida/storage-link" "^1.1.8"
     ajv "^8.6.3"
     ajv-formats "^2.1.1"
     axios "^0.21.2"
@@ -2515,52 +2515,52 @@
     pouchdb-find "^7.2.2"
     uuid "^8.3.2"
 
-"@verida/did-client@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@verida/did-client/-/did-client-0.1.7.tgz#cc6959591877142b0d7c0ea3498d835a1f74ce68"
-  integrity sha512-/wTuEMy+0uy33ye+woEnTE/AnyCSHBevQ84jlKzP6COSuDIP6q3Syn7JXyg/tIiPD7llKA3+J/RhFlr4TO4mYg==
+"@verida/did-client@^0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@verida/did-client/-/did-client-0.1.8.tgz#fd53fdea98e6eea1331de6bdfab34fb0ec09b391"
+  integrity sha512-QO2RtjH5JhjkNkUnxTclW3YyNRAm8f/MdWQ2gnSPwq+iZ0tcmGueyK9+4ZkrGbg6OmZxEmujdoez/FMHYZvIOQ==
   dependencies:
-    "@verida/did-document" "^1.0.4"
+    "@verida/did-document" "^1.0.5"
     axios "^0.23.0"
     ethers "^5.5.1"
 
-"@verida/did-document@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@verida/did-document/-/did-document-1.0.4.tgz#6fa526ad02073a07ba90cc70e289c2ac6a429b97"
-  integrity sha512-dB+aKY/9hHyNPeLfHg235Rf6XSc2fcNuHoUmuprQvY3YeSSi76TO+M94gUZRulCoRL8dY52IdVYuoPr5cbVpkA==
+"@verida/did-document@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@verida/did-document/-/did-document-1.0.5.tgz#18ff73560b183f9601ef8f6f744e0bc0ebb0f7a8"
+  integrity sha512-ELDRXHDXiPO8maoWCAjhCDvj8HB9vJCSyEJTDaGBgW5mPUY00w3pELJOVX17Ln+CIEquZzQgZGbogrbbnItYUg==
   dependencies:
-    "@verida/encryption-utils" "^1.1.2"
-    "@verida/keyring" "^1.1.2"
+    "@verida/encryption-utils" "^1.1.3"
+    "@verida/keyring" "^1.1.3"
     did-resolver "^3.1.2"
 
-"@verida/encryption-utils@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@verida/encryption-utils/-/encryption-utils-1.1.2.tgz#4d7daddc8bbcfa5888a62be4e63c8f48ca58ce70"
-  integrity sha512-BrNNmddUbWL2hLQFiwj1joWFzbvLIjIUfvG+m8hOc2sjz1owQINPSd7UTG6c21NoFYX+0XKCFCjiJROQXqpSgw==
+"@verida/encryption-utils@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@verida/encryption-utils/-/encryption-utils-1.1.3.tgz#e2c2f4918027f3e53d938fb3bc3966ebf1571249"
+  integrity sha512-qxLH0Tt4ufgE0I3aJFZfwjS2jACROy+X9oocUtvMInTTZNshHCt0uoyr7BVsnY6Ihifk6lkf9jjs18y9wN2xyA==
   dependencies:
     ethers "^5.5.1"
     tweetnacl "^1.0.3"
     tweetnacl-util "^0.15.1"
 
-"@verida/keyring@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@verida/keyring/-/keyring-1.1.2.tgz#553a273eeac40ed32d3dbce2b483268e00664b56"
-  integrity sha512-0RpH/++7Z0Tpd1AM16W2nlvMMMnFkVEbCX1tzz0rYKvMDESjqhogRy7v3IETK9l9FnL9SazUzzP2JQj5ABuiGg==
+"@verida/keyring@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@verida/keyring/-/keyring-1.1.3.tgz#26e827f2877c3be0ba0dfdedc761a1c6a1ad905d"
+  integrity sha512-qeXBMRMxU3BW7UtGsJD5rd2ZOc9j8C68iWnGOqfFsHt8aSg8uR9d24E6scDb/KX7mK6Jcp0xSKd0meRzLBmy4g==
   dependencies:
-    "@verida/encryption-utils" "^1.1.2"
+    "@verida/encryption-utils" "^1.1.3"
     ethers "^5.5.1"
     tweetnacl "^1.0.3"
     uuid "^8.3.2"
 
-"@verida/storage-link@^1.1.7":
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/@verida/storage-link/-/storage-link-1.1.7.tgz#e659fe47772c8fecfe2bc65d06ea249ac55a8e85"
-  integrity sha512-9Tpxia0xWSFFIBXTV3AWRalg83Lmd20utiWaR7cJHeBx0Jf/JIhImg78a8HDM+RdhumpUQIqmC8Up9c6kAQpTg==
+"@verida/storage-link@^1.1.8":
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/@verida/storage-link/-/storage-link-1.1.8.tgz#58b9b127bb6b846bd556ef7567c6931b10d64516"
+  integrity sha512-H80JrldN8WaYm8P6dq76EYQztG4AHI2P1dhwuhgrEKjOR5N3onJ6W01ubVo2YnWG5/peQQh+2pnK0RQayXRvfg==
   dependencies:
-    "@verida/did-client" "^0.1.7"
-    "@verida/did-document" "^1.0.4"
-    "@verida/encryption-utils" "^1.1.2"
-    "@verida/keyring" "^1.1.2"
+    "@verida/did-client" "^0.1.8"
+    "@verida/did-document" "^1.0.5"
+    "@verida/encryption-utils" "^1.1.3"
+    "@verida/keyring" "^1.1.3"
     url-parse "^1.5.3"
 
 "@webassemblyjs/ast@1.9.0":
@@ -4194,7 +4194,7 @@ copy-descriptor@^0.1.0:
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
-copy-to-clipboard@^3:
+copy-to-clipboard@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/copy-to-clipboard/-/copy-to-clipboard-3.3.1.tgz#115aa1a9998ffab6196f93076ad6da3b913662ae"
   integrity sha512-i13qo6kIHTTpCm8/Wup+0b1mVWETvu2kIMzKoK8FpkLkFxlt0znUAHcMzox+T8sPlqtZXq3CulEjQHsYiGFJUw==
@@ -9913,15 +9913,6 @@ prompts@2.4.0, prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.5.8:
-  version "15.8.1"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
-  integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
-  dependencies:
-    loose-envify "^1.4.0"
-    object-assign "^4.1.1"
-    react-is "^16.13.1"
-
 prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
@@ -9930,6 +9921,15 @@ prop-types@^15.7.2:
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.8.1"
+
+prop-types@^15.8.1:
+  version "15.8.1"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
+  integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.13.1"
 
 proxy-addr@~2.0.5:
   version "2.0.6"
@@ -10115,13 +10115,13 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
-react-copy-to-clipboard@^5.0.4:
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/react-copy-to-clipboard/-/react-copy-to-clipboard-5.0.4.tgz#42ec519b03eb9413b118af92d1780c403a5f19bf"
-  integrity sha512-IeVAiNVKjSPeGax/Gmkqfa/+PuMTBhutEvFUaMQLwE2tS0EXrAdgOpWDX26bWTXF3HrioorR7lr08NqeYUWQCQ==
+react-copy-to-clipboard@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/react-copy-to-clipboard/-/react-copy-to-clipboard-5.1.0.tgz#09aae5ec4c62750ccb2e6421a58725eabc41255c"
+  integrity sha512-k61RsNgAayIJNoy9yDsYzDe/yAZAzEbEgcz3DZMhF686LEyukcE1hzurxe85JandPUG+yTfGVFzuEw3xt8WP/A==
   dependencies:
-    copy-to-clipboard "^3"
-    prop-types "^15.5.8"
+    copy-to-clipboard "^3.3.1"
+    prop-types "^15.8.1"
 
 react-dev-utils@^11.0.3:
   version "11.0.4"

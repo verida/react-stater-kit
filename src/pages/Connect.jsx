@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
-import { Bars } from 'react-loader-spinner';
-import VeridaLoginBtn from '../assets/images/connect_with_verida_dark.png';
-import { ReactComponent as VeridaLogo } from '../assets/images/verida_logo.svg';
-import useAuth from '../hooks/useAuth';
-import '../assets/css/connect.css';
-import VeridaClient from '../api/veridaClient';
+import React, { useEffect } from "react";
+import { Bars } from "react-loader-spinner";
+import VeridaLoginBtn from "../assets/images/connect_with_verida_dark.png";
+import { ReactComponent as VeridaLogo } from "../assets/images/verida_logo.svg";
+import useAuth from "../hooks/useAuth";
+import VeridaClient from "../api/veridaClient";
 
 const Connect = () => {
 	const { connectVault, isLoading } = useAuth();
