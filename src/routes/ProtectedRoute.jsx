@@ -1,9 +1,6 @@
 import React from 'react';
-import { Bars } from 'react-loader-spinner';
 import { Navigate, useLocation } from 'react-router-dom';
-import { useEffect } from 'react/cjs/react.development';
 import VeridaClient from '../api/veridaClient';
-import useAuth from '../hooks/useAuth';
 
 const ProtectedRoute = ({ children }) => {
 	let auth = VeridaClient.connected;
